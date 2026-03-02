@@ -13,7 +13,25 @@ export default function Home() {
       {/* Nav */}
       <nav className="landing-nav">
         <div className="landing-logo">SECURITY<span style={{ color: "var(--amber)" }}>_</span>ROADMAPS</div>
-        <div className="landing-nav-pill">2025 Edition · Practitioner Built</div>
+        <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
+          <div className="landing-nav-pill">2025 Edition · Practitioner Built</div>
+          <Link
+            href="/about"
+            style={{
+              fontFamily: "var(--font-mono)",
+              fontSize: 14,
+              letterSpacing: "0.08em",
+              padding: "5px 14px",
+              border: "1px solid var(--border-mid)",
+              borderRadius: 6,
+              color: "var(--text-mid)",
+              textDecoration: "none",
+              transition: "all 0.18s",
+            }}
+          >
+            About the Author
+          </Link>
+        </div>
       </nav>
 
       {/* Hero */}

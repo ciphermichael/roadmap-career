@@ -105,7 +105,7 @@ function CloudTabs({ tabs }: { tabs: CloudTab[] }) {
           >
             <span className="cloud-tab-icon">{t.icon}</span>
             {t.label}
-            <span style={{ fontSize: 10, color: "var(--text-faint)", marginLeft: 4 }}>
+            <span style={{ fontSize: 13, color: "var(--text-faint)", marginLeft: 4 }}>
               {t.subtitle}
             </span>
           </button>
@@ -144,7 +144,7 @@ function SkillBars({ roles }: { roles: SkillRole[] }) {
               <div key={b.label} className="skill-bar-wrap">
                 <div className="skill-bar-info">
                   <span>{b.label}</span>
-                  <span style={{ color: b.color, fontFamily: "var(--font-mono)", fontSize: 10 }}>{b.pct}%</span>
+                  <span style={{ color: b.color, fontFamily: "var(--font-mono)", fontSize: 13 }}>{b.pct}%</span>
                 </div>
                 <div className="skill-bar-track">
                   <div
@@ -224,6 +224,7 @@ export default function RoadmapShell({
           <span className="nav-badge">{badge}</span>
         </div>
         <div className="topnav-right">
+          <Link href="/about" className="nav-back" style={{ borderColor: "transparent" }}>About</Link>
           <Link href="/" className="nav-back">← All Roadmaps</Link>
         </div>
       </nav>
@@ -279,7 +280,7 @@ export default function RoadmapShell({
                 {routeTitle}
                 <span />
               </div>
-              <h1 className="t-display" style={{ fontSize: "clamp(52px,6vw,80px)", marginBottom: 20, color: accent }}>
+              <h1 className="t-display" style={{ fontSize: "clamp(58px,6vw,86px)", marginBottom: 20, color: accent }}>
                 {title}
               </h1>
               <p className="hero-desc">{desc}</p>
